@@ -1,5 +1,7 @@
 package com.ricky.algorithm;
 
+import java.util.Arrays;
+
 public class MergeSort {
     public static void main(String[] args) {
         int[] target = new int[]{8, 3, 13, 12, 7, 6, 21, 18, 55, 85, 24, 89, 14};
@@ -46,8 +48,8 @@ public class MergeSort {
             return arr;
         } else {
             int middle = arr.length / 2;
-            int[] leftArr = subArray(arr, 0, middle - 1);
-            int[] rightArr = subArray(arr, middle, arr.length - 1);
+            int[] leftArr = Arrays.copyOfRange(arr, 0, middle);
+            int[] rightArr = Arrays.copyOfRange(arr, middle, arr.length);
             return merge(mergeSort(leftArr), mergeSort(rightArr));
         }
 

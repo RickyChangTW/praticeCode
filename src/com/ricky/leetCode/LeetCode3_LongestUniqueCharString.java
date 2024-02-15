@@ -2,7 +2,7 @@ package com.ricky.leetCode;
 
 import java.util.HashMap;
 
-public class LeetCode3LongestUniqueCharString {
+public class LeetCode3_LongestUniqueCharString {
     public static void main(String[] args) {
         System.out.println(longestUniqueCharString("thisishowwedoit"));
     }

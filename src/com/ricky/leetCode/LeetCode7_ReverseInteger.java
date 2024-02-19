@@ -2,7 +2,6 @@ package com.ricky.leetCode;
 
 public class LeetCode7_ReverseInteger {
     public static void main(String[] args) {
-        System.out.println(321 / 10 * 10);
         System.out.println(reverse(-3210));
     }
 
